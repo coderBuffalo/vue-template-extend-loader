@@ -39,7 +39,8 @@ specify tag gacExtender in your template markup, or loader will **_`NOT`_** proc
 specify tag gacExtend in gacExtender, place prop `query` to select base component markups, which will be process by prop `mode`.
 
 tag gacExtend will be removed if prop `query` not exist.
-tag gacExtender will be removed if it has not gacExtend markup.
+tag gacExtender will be removed if prop `path` neither explicitly specified nor inferred from vue component option `extends` key.
+tag gacExtender content will be replace by the prop `path` component's template content.
 
 - html - replace queried node's content with content. `default mode`
 - replace - replace queried node with content.

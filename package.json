@@ -2,7 +2,6 @@
     "name": "vue-template-extend-loader",
     "version": "0.1.1",
     "description": "vue template loader for extending",
-    "author": "johnsonwu",
     "private": true,
     "main": "src/index.js",
     "scripts": {
@@ -58,7 +57,10 @@
             "cheerioOptions": {
                 "type": "object",
                 "additionalProperties": true
-            }
+            },
+            "handler": {
+                "instanceof": "Function"
+            } 
         }
     },
     "extenderOptions": {

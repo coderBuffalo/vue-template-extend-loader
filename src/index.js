@@ -20,7 +20,6 @@ module.exports = function(source) {
     // extender标签不存在, 直接退出
     const extender_matcher = source.match(EXTENDER_REGEXP);
     if (!extender_matcher) return callback(null, source);
-    console.log(`${new Date().toLocaleTimeString()}🔥 -> 3`, source);
 
     const extender = new Extender(source, callback, options, this);
     extender.handleExtend();
